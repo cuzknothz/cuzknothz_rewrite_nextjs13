@@ -1,7 +1,6 @@
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
-import { NextPage } from "next";
 import { useRef, useState } from "react";
 
 function Box(props) {
@@ -28,7 +27,7 @@ function Box(props) {
   );
 }
 
-const Page: NextPage = (): JSX.Element => {
+export default function Home() {
   return (
     <>
       <div className="w-screen h-screen">
@@ -38,6 +37,4 @@ const Page: NextPage = (): JSX.Element => {
       </div>
     </>
   );
-};
-
-export default Page;
+}
